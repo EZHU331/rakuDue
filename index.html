@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raku — habit pulse</title>
+  <meta name="description" content="Raku is a private habit and spend-pulse app. On-device insights. No bank login." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html">RAKU</a>
+    <nav>
+      <a href="index.html" aria-current="page">App</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">On-device habit pulse</p>
+      <h1>Raku</h1>
+      <p class="lede">
+        A calm rhythm for daily habits and spend trails — not a budget dashboard.
+        Your data stays with your Apple&nbsp;ID and on your devices.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article>
+        <h2>Habits that close</h2>
+        <p>Personal goals across life, body, screen, and spend. Rings show progress; week folds show the longer pattern.</p>
+      </article>
+      <article>
+        <h2>Spend without a bank link</h2>
+        <p>Feed the pulse from iCloud&nbsp;Mail (IMAP), Apple&nbsp;Wallet when entitled, or file dumps you choose. No bank login.</p>
+      </article>
+      <article>
+        <h2>Readings, not KPI walls</h2>
+        <p>On-device narratives summarize unusual weeks and open rings — optional Apple Intelligence polish stays local.</p>
+      </article>
+    </section>
+
+    <section class="note">
+      <h2>Privacy first</h2>
+      <p>
+        Raku is built for on-device processing. See the
+        <a href="privacy.html">Privacy Policy</a>
+        for what we collect, what stays on your phone, and how iCloud sync works.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Raku · Bundle <code>com.raku.app</code></p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+</body>
+</html>

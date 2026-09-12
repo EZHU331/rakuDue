@@ -1,0 +1,143 @@
+:root {
+  --wash: #e0e4e0;
+  --glass: #b8bcb8;
+  --ink: #141816;
+  --muted: rgba(20, 24, 22, 0.62);
+  --edge: rgba(20, 24, 22, 0.18);
+  --panel: #cfd3cf;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: light; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "SF Pro Text", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #ecefec 0%, transparent 55%),
+    linear-gradient(180deg, var(--wash), #d5d9d5 100%);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+a { color: var(--ink); text-underline-offset: 0.15em; }
+a:hover { opacity: 0.75; }
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 0.5rem;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav { display: flex; gap: 1rem; }
+nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.55;
+}
+nav a[aria-current="page"] { opacity: 1; }
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.hero {
+  padding: 1.5rem 0 0.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.85rem;
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 36rem;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 0.85rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 700px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.grid article,
+.note {
+  background: color-mix(in srgb, var(--glass) 70%, white);
+  border: 1px solid var(--edge);
+  border-radius: 14px;
+  padding: 1.1rem 1.15rem;
+}
+
+.grid h2, .note h2, .policy h2 {
+  font-size: 1rem;
+  margin: 0 0 0.45rem;
+  letter-spacing: -0.01em;
+}
+
+.grid p, .note p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.policy h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
+.policy .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: -0.3rem;
+}
+.policy h2 { margin-top: 1.75rem; }
+.policy ul { padding-left: 1.2rem; color: var(--muted); }
+.policy li { margin: 0.35rem 0; }
+.policy p { color: var(--muted); }
+.policy strong { color: var(--ink); font-weight: 650; }
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.86em;
+  background: color-mix(in srgb, var(--panel) 80%, white);
+  padding: 0.1em 0.35em;
+  border-radius: 5px;
+}
+
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem 2.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+footer p { margin: 0.25rem 0; }

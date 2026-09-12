@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Raku</title>
+  <meta name="description" content="Privacy Policy for Raku (com.raku.app)." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html">RAKU</a>
+    <nav>
+      <a href="index.html">App</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="policy">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: 12 September 2026 · App: Raku (<code>com.raku.app</code>)</p>
+
+    <p>
+      Raku (“we”, “the app”) is an independent iOS app. This policy explains how Raku handles information.
+      Raku is designed so that habit and spend processing happens <strong>on your device</strong>.
+    </p>
+
+    <h2>1. Summary</h2>
+    <ul>
+      <li>No bank account login.</li>
+      <li>Mail and Wallet data you allow are read and processed on-device.</li>
+      <li>Optional iCloud sync keeps your Raku data with your Apple&nbsp;ID across your devices.</li>
+      <li>We do not sell your personal or financial data.</li>
+    </ul>
+
+    <h2>2. Information the app may process</h2>
+    <p>Depending on features you use, Raku may process:</p>
+    <ul>
+      <li><strong>Habits you create</strong> — names, goals, check-ins, and related settings.</li>
+      <li><strong>Spend trail</strong> — merchants, amounts, dates, and categories from sources you connect or import (for example statement dumps, pasted receipts, iCloud&nbsp;Mail receipts, or Apple&nbsp;Wallet transactions if you grant access).</li>
+      <li><strong>Recurring signals</strong> — subscription-like items you save or that are inferred from your trail (such as iCloud+ or Apple Media charges appearing in that trail).</li>
+      <li><strong>Health data you allow</strong> — steps and mindful minutes via Apple Health, used only for habit goals you enable.</li>
+      <li><strong>Screen Time selection you allow</strong> — opaque app/category tokens for screen-limit goals; Raku does not receive app content.</li>
+      <li><strong>Display preferences</strong> — such as preferred currency and optional display name on the home LCD.</li>
+    </ul>
+
+    <h2>3. iCloud Mail (IMAP)</h2>
+    <p>
+      If you connect iCloud&nbsp;Mail, Raku uses IMAP (<code>imap.mail.me.com</code>) with an
+      <em>app-specific password</em> you provide. Credentials are stored in the iOS Keychain on your device.
+      Messages are fetched and parsed <strong>on-device</strong> to find receipt-like spend signals.
+      Mail content is not uploaded to our servers — Raku does not operate a mail backend for this feature.
+    </p>
+
+    <h2>4. Apple Wallet / FinanceKit</h2>
+    <p>
+      If Apple grants FinanceKit access and you authorize it, Raku may read Apple&nbsp;Card, Apple&nbsp;Cash,
+      and related Wallet account transactions you allow, on-device, to update your spend trail and habit pulse.
+      Access requires your explicit permission and can be revoked in iOS Settings.
+    </p>
+
+    <h2>5. iCloud sync</h2>
+    <p>
+      When you are signed into iCloud, Raku may sync app data (habits, check-ins, spend events, recurring items)
+      through Apple CloudKit under container <code>iCloud.com.raku.app</code>.
+      That sync is between your devices and Apple’s iCloud for your account — not a separate Raku cloud database we operate.
+    </p>
+
+    <h2>6. On-device intelligence</h2>
+    <p>
+      Optional narrative polish may use Apple’s on-device Foundation Models / Apple Intelligence when available.
+      Prompts and results for this feature are intended to remain on-device; they are not used to train a Raku cloud model.
+    </p>
+
+    <h2>7. What we do not do</h2>
+    <ul>
+      <li>We do not require a bank connection or open-banking login for core use.</li>
+      <li>We do not sell personal data or financial transaction data.</li>
+      <li>We do not use your spend trail for third-party advertising.</li>
+    </ul>
+
+    <h2>8. Data retention and deletion</h2>
+    <p>
+      Data lives on your device and, if enabled, in your iCloud account for the app.
+      You can remove connected mail credentials in the app, revoke Health, Screen&nbsp;Time, and Wallet permissions in iOS Settings,
+      and delete the app (and related iCloud data for the app via Apple’s iCloud management) to remove local Raku data.
+    </p>
+
+    <h2>9. Children</h2>
+    <p>
+      Raku is not directed at children under 13 (or the minimum age required in your country).
+      Do not use the app to submit personal data of children.
+    </p>
+
+    <h2>10. Changes</h2>
+    <p>
+      We may update this policy as the app evolves. The effective date above will change when we do.
+      Continued use after an update means you accept the revised policy.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      Questions about privacy can be raised through the App&nbsp;Store product page for Raku.
+    </p>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> <a href="index.html">Raku</a></p>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+</body>
+</html>
